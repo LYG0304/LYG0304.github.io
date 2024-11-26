@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>무역 Big5 설문조사</title>
+  <style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #0077cc;
+    color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+    
+    .section {
+      margin-bottom: 20px;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: #3498db;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+  
+  
+</head>
+<body>
+  <h1>무역 Big5 설문조사</h1>
+  본 설문지는 기업의 수출 유형을 분석하기 위한 설문으로, 기업의 현 상황에 맞게 설문을 제출하여 주시기 바랍니다.  수출에 필요한 5가지 요소로 구성되어있으며, 시장지향성, 마케팅 방향성, 제품 차별화, 국제경쟁력, 현지화 수준을 분석합니다. 옳고 그름이 없으니 편안하게 답변해주시면됩니다.
+
+  <!-- 시장 지향성 -->
+  <div class="section" id="marketOrientation">
+    <h2>시장 지향성</h2>
+    <label>수출을 진행한다면 어디에 하고싶은가요?</label><br>
+    <input type="radio" name="market" value="1"> 국가 위주<br>
+    <input type="radio" name="market" value="0"> 지역 위주<br> 
+    <label>판매하고 싶은 지역이 어디인가요?</label><br>
+    <input type="checkbox" name="region" value="0"> 동북아<br>
+    <input type="checkbox" name="region" value="0"> 동남아<br>
+    <input type="checkbox" name="region" value="0"> 중앙아시아<br>
+    <input type="checkbox" name="region" value="0"> 유럽<br>
+    <input type="checkbox" name="region" value="0"> 북아메리카<br>
+    <input type="checkbox" name="region" value="0"> 남아메리카<br>
+    <input type="checkbox" name="region" value="0"> 아프리카<br>
+  </div>
+
+  <!-- 마케팅 방향성 -->
+  <div class="section" id="marketingDirection">
+    <h2>마케팅 방향성</h2>
+    <label>해당 기업의 주요 거래 유형은 무엇입니까?</label><br>
+    <input type="radio" name="marketing" value="1"> B2C<br>
+    <input type="radio" name="marketing" value="0"> B2B<br> 
+    <label>마케팅 채널은 어떤 것을 선호하십니까?</label><br>
+    <input type="radio" name="channel" value="1"> 온라인<br>
+    <input type="radio" name="channel" value="0"> 오프라인<br> 
+    <label>바이어와는 주로 어떻게 접촉하나요?</label><br>
+    <input type="checkbox" name="contact" value="1"> SNS<br>
+    <input type="checkbox" name="contact" value="1"> Email<br>
+    <input type="checkbox" name="contact" value="0"> 박람회<br> 
+  </div>
+
+  <!-- 제품 차별화 -->
+  <div class="section" id="productDifferentiation">
+    <h2>제품 차별화</h2>
+    <label>해당 제품에 대한 특허 또는 독자적 기술이 있습니까?</label><br>
+    <input type="radio" name="patent" value="1"> 예<br>
+    <input type="radio" name="patent" value="0"> 아니오<br>
+    <label>귀 사의 제품 생산 방식은 어떻게 됩니까?</label><br>
+    <input type="radio" name="production" value="0"> 다품종 소량 생산<br> 
+    <input type="radio" name="production" value="1"> 소품종 대량 생산<br>
+    <label>수출하려는 제품의 장점을 한가지만 골라주세요.</label><br>
+    <input type="radio" name="advantage" value="1"> 품질<br>
+    <input type="radio" name="advantage" value="1"> 디자인<br>
+    <input type="radio" name="advantage" value="0"> 가격<br> 
+  </div>
+
+  <!-- 국제 경쟁력 -->
+  <div class="section" id="internationalCompetitiveness">
+    <h2>국제 경쟁력</h2>
+    <label>언어 지원을 포함한 다국어 고객 지원을 하고 있나요?</label><br>
+    <input type="radio" name="languageSupport" value="1"> 예<br>
+    <input type="radio" name="languageSupport" value="0"> 아니오<br>
+    <label>수출하고자하는 제품에 대해 국제 인증을 가지고 있나요?</label><br>
+    <input type="radio" name="certification" value="1"> 예<br>
+    <input type="radio" name="certification" value="0"> 아니오<br>
+    <label>수출을 전담하는 직원이 있나요?</label><br>
+    <input type="radio" name="staffRatio" value="1"> 예<br>
+    <input type="radio" name="staffRatio" value="0"> 아니오<br>
+  </div>
+
+  <!-- 현지 적합성 -->
+  <div class="section" id="localAdaptability">
+    <h2>현지 적합성</h2>
+    <label>제품의 가격 책정 기준이 어떻게되나요?</label><br>
+    <input type="radio" name="pricing" value="0"> 국내 물가<br> 
+    <input type="radio" name="pricing" value="1"> 국외 물가<br> 
+    <label>현지 고객의 피드백을 반영한 제품이나 마케팅 전략 개선을 진행하고 있습니까?</label><br>
+    <input type="radio" name="feedback" value="1"> 예<br>
+    <input type="radio" name="feedback" value="0"> 아니오<br>
+    <label>해외 시장에 진출할 때 현지화된 브랜드명 또는 제품명을 사용하고 있습니까?</label><br>
+    <input type="radio" name="localBrand" value="1"> 예<br>
+    <input type="radio" name="localBrand" value="0"> 아니오<br>
+    <label>해외 시장의 브랜드 인지도 향상을 위해 현지 유통업체 또는 마케팅 파트너와 협력하고 있습니까?</label><br>
+    <input type="radio" name="localPartner" value="1"> 예<br>
+    <input type="radio" name="localPartner" value="0"> 아니오<br>
+  </div>
+
+  <button onclick="calculateScores()">제출</button>
+
+  <div class="result" id="result"></div>
+
+  <script>
+    function calculateScores() {
+      const sections = [
+        "marketOrientation",
+        "marketingDirection",
+        "productDifferentiation",
+        "internationalCompetitiveness",
+        "localAdaptability"
+      ];
+
+      let results = {};
+
+      sections.forEach(section => {
+        let sectionScore = 0;
+        const inputs = document
+          .getElementById(section)
+          .querySelectorAll("input:checked");
+        inputs.forEach(input => {
+          sectionScore += parseInt(input.value);
+        });
+        results[section] = sectionScore;
+      });
+
+      const resultDiv = document.getElementById("result");
+
+      resultDiv.innerHTML = `
+        <p>시장 지향성: <a href="${getMarketOrientationLink(results.marketOrientation)}" target="_blank">${getMarketOrientationResult(results.marketOrientation)}</a></p>
+        <p>마케팅 방향성: <a href="${getMarketingDirectionLink(results.marketingDirection)}" target="_blank">${getMarketingDirectionResult(results.marketingDirection)}</a></p>
+        <p>제품 차별화: <a href="${getProductDifferentiationLink(results.productDifferentiation)}" target="_blank">${getProductDifferentiationResult(results.productDifferentiation)}</a></p>
+        <p>국제 경쟁력: <a href="${getInternationalCompetitivenessLink(results.internationalCompetitiveness)}" target="_blank">${getInternationalCompetitivenessResult(results.internationalCompetitiveness)}</a></p>
+        <p>현지 적합성: <a href="${getLocalAdaptabilityLink(results.localAdaptability)}" target="_blank">${getLocalAdaptabilityResult(results.localAdaptability)}</a></p>
+      `;
+    }
+
+    function getMarketOrientationResult(score) {
+      return score >= 1 ? 'R' : 'C';
+    }
+
+    function getMarketingDirectionResult(score) {
+      return score >= 2 ? 'I' : (score <= 1 ? 'E' : 'E');
+    }
+
+    function getProductDifferentiationResult(score) {
+      return score >= 2 ? 'D' : (score <= 1 ? 'P' : 'P');
+    }
+
+    function getInternationalCompetitivenessResult(score) {
+      return score >= 2 ? 'A' : (score <= 1 ? 'N' : 'N');
+    }
+
+    function getLocalAdaptabilityResult(score) {
+      return score >= 2 ? 'G' : (score <= 1 ? 'L' : 'L');
+    }
+
+    function getMarketOrientationLink(score) {
+      return score >= 1 ? 'https://dream.kotra.or.kr/kotranews/cms/com/index.do?MENU_ID=220' : 'https://dream.kotra.or.kr/kotranews/cms/com/index.do?MENU_ID=250';
+    }
+
+    function getMarketingDirectionLink(score) {
+      return score >= 2 ? 'https://dream.kotra.or.kr/kotranews/cms/com/index.do?MENU_ID=280' : 'https://dream.kotra.or.kr/kotranews/cms/com/index.do?MENU_ID=260';
+    }
+
+    function getProductDifferentiationLink(score) {
+      return score >= 2 ? 'https://www.kotra.or.kr/bigdata/bhrcMarket#search/hscd/870830' : 'https://www.kotra.or.kr/bigdata/partner/search';
+    }
+
+    function getInternationalCompetitivenessLink(score) {
+      return score >= 2 ? 'https://www.kotra.or.kr/subList/20000005984' : 'https://www.kotra.or.kr/subList/20000005984';
+    }
+
+    function getLocalAdaptabilityLink(score) {
+      return score >= 2 ? 'https://www.kotra.or.kr/bigdata/enterpriseInfo' : 'https://www.kotra.or.kr/bigdata/marketAnalysis';
+    }
+  </script>
+</body>
+</html>
